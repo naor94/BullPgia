@@ -8,9 +8,16 @@ class Guesser
   
 public:
 unsigned  int length;
+
+
 virtual string guess()=0;
-virtual void startNewGame(unsigned int x);
-virtual void learn(string y);
+virtual void startNewGame(unsigned int x){
+
+};
+virtual void learn(string y){
+    
+};
 
 
+};
 }
