@@ -38,14 +38,14 @@ int main() {
 		.CHECK_OUTPUT(calculateBullAndPgia("555","655"), "2,0")
 		.CHECK_OUTPUT(calculateBullAndPgia("001","1"), "0,1") 
 		.CHECK_OUTPUT(calculateBullAndPgia("010","1"), "0,1")     
-    .CHECK_OUTPUT(calculateBullAndPgia("100","1"), "1,0")
+                .CHECK_OUTPUT(calculateBullAndPgia("100","1"), "1,0")
 		.CHECK_OUTPUT(calculateBullAndPgia("4","1"), "0,0") 
-    .CHECK_OUTPUT(calculateBullAndPgia("1","1"), "1,0")
-    .CHECK_OUTPUT(calculateBullAndPgia("01","10"), "0,2")
-		.CHECK_OUTPUT(calculateBullAndPgia("10","10"), "2,0")
-    .CHECK_OUTPUT(calculateBullAndPgia("9876543210","9876543210"), "10,0")  
-    .CHECK_OUTPUT(calculateBullAndPgia("987654321","123456789"), "1,8") 
-	  .CHECK_OUTPUT(calculateBullAndPgia("666","11176"), "0,0") 
+                .CHECK_OUTPUT(calculateBullAndPgia("1","1"), "1,0")
+                .CHECK_OUTPUT(calculateBullAndPgia("01","10"), "0,2")
+  		.CHECK_OUTPUT(calculateBullAndPgia("10","10"), "2,0")
+                .CHECK_OUTPUT(calculateBullAndPgia("9876543210","9876543210"), "10,0")  
+                .CHECK_OUTPUT(calculateBullAndPgia("987654321","123456789"), "1,8") 
+	        .CHECK_OUTPUT(calculateBullAndPgia("666","11176"), "0,0") 
 		.CHECK_OUTPUT(calculateBullAndPgia("4567","7654"), "0,4") 
 		.CHECK_OUTPUT(calculateBullAndPgia("4","7654"), "0,1") 
 		.CHECK_OUTPUT(calculateBullAndPgia("7","7654"), "1,0") 
@@ -68,7 +68,7 @@ int main() {
 		.CHECK_EQUAL(play(c1234, g123456789, 9, 100), 0)     // chooser loses technically by choosing an illegal number (too long).
 		.CHECK_EQUAL(play(c9876, g9876, 4, 100), 1)//gusser wins in one turn
 		.CHECK_EQUAL(play(c1234, g9999, 4, 57), 58)    // guesser loses by running out of turns
-    .CHECK_EQUAL(play(c987654321, g123456789, 9, 12), 13)    // guesser loses by running out of turns 
+                .CHECK_EQUAL(play(c987654321, g123456789, 9, 12), 13)    // guesser loses by running out of turns 
 
 
 
