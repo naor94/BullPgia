@@ -47,7 +47,7 @@ int main() {
                 .CHECK_OUTPUT(calculateBullAndPgia("987654321","123456789"), "1,8") 
 	        .CHECK_OUTPUT(calculateBullAndPgia("666","11176"), "0,0") 
 		.CHECK_OUTPUT(calculateBullAndPgia("4567","7654"), "0,4") 
-		.CHECK_OUTPUT(calculateBullAndPgia("4","7654"), "0,1") 
+		.CHECK_OUTPUT(calculateBullAndPgia("4","7654"), "0,0") 
 		.CHECK_OUTPUT(calculateBullAndPgia("7","7654"), "1,0") 
 		.CHECK_OUTPUT(calculateBullAndPgia("7","60"), "0,0") 
 		.CHECK_OUTPUT(calculateBullAndPgia("7777","77"), "2,0") 
